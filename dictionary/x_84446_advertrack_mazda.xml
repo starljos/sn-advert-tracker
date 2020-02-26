@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Mazda" max_length="40" name="x_84446_advertrack_mazda" type="collection">
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="ID" max_length="40" name="id" type="string" use_dynamic_default="true"/>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Link" max_length="1024" name="link" type="url"/>
+    </element>
+</database>
