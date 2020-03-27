@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_84446_advertrack_mazda">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="origin_id" table="x_84446_advertrack_flat">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
-        <audit>true</audit>
+        <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Origin ID</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,15 +27,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>origin_id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_84446_advertrack_mazda</name>
+        <max_length>100</max_length>
+        <name>x_84446_advertrack_flat</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -52,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-02-26 19:03:17</sys_created_on>
-        <sys_id>d9804454db13801006fc7b6039961947</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>x_84446_advertrack_mazda</sys_name>
+        <sys_created_on>2020-03-26 20:50:05</sys_created_on>
+        <sys_id>edfee5a5dbf7001006fc7b6039961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Origin ID</sys_name>
         <sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
-        <sys_update_name>sys_dictionary_x_84446_advertrack_mazda_null</sys_update_name>
+        <sys_update_name>sys_dictionary_x_84446_advertrack_flat_origin_id</sys_update_name>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-02-26 20:24:52</sys_updated_on>
+        <sys_updated_on>2020-03-26 20:50:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

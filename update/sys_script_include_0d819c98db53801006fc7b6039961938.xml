@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_84446_advertrack.AdvertProcessor</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AdvertProcessor</name>
+        <script><![CDATA[var AdvertProcessor = Class.create();
+AdvertProcessor.prototype = {
+
+	initialize: function(){},
+
+	processAd: function (payload) {
+		//payload = JSON.parse(payload);
+		payload.forEach(function (el) {
+
+			var mazdaExists = new GlideRecord('x_84446_advertrack_mazda');
+			var format = '.jpg';
+			var img = el.image.substring(0, el.image.indexOf(format) + format.length);
+			var exists = mazdaExists.get('otomoto_id', el.id);
+
+			if (exists) {
+				mazdaExists.link = el.href;
+				mazdaExists.title = el.title;
+				mazdaExists.location = el.location;
+				mazdaExists.year = el.year;
+				mazdaExists.km = el.km;
+				mazdaExists.price = el.price;
+				mazdaExists.otomoto_id = el.id;
+				mazdaExists.image = img;
+				mazdaExists.update();
+			} else {
+				var mazda = new GlideRecord('x_84446_advertrack_mazda');
+				mazda.initialize();
+				mazda.link = el.href;
+				mazda.title = el.title;
+				mazda.location = el.location;
+				mazda.year = el.year;
+				mazda.km = el.km;
+				mazda.price = el.price;
+				mazda.otomoto_id = el.id;
+				mazda.image = img;
+				mazda.insert();
+			}
+		});
+	},
+
+	processFlatAd: function (payload) {
+
+		payload.forEach(function (el) {
+
+			var flatExists = new GlideRecord('x_84446_advertrack_flat');
+			var exists = flatExists.get('origin_id', el.id);
+
+			if (exists) {
+				gs.info("matched flat!");
+				flatExists.origin_id = el.id;
+				flatExists.offer_from = el.oferta_od;
+				flatExists.offer_from = el.oferta_od;
+				flatExists.floor = el.poziom;
+				flatExists.furnished = el.umeblowane;
+				flatExists.construction_type = el.rodzaj_zabudowy;
+				flatExists.size = el.powierzchnia;
+				flatExists.rooms = el.liczba_pokoi;
+				flatExists.price_extra = el.czynsz;
+				flatExists.title = el.title;
+				flatExists.price = el.price;
+				var flatSysid = flatExists.update();
+
+				el.pics.forEach(function(pic){
+
+					var flatPicExists = new GlideRecord('x_84446_advertrack_flat_pictures');
+					var picExists = flatPicExists.get('link', el.id);
+
+					if (!picExists){
+						var flatPic = new GlideRecord('x_84446_advertrack_flat_pictures');
+						flatPic.initialize();
+						flatPic.link = pic;
+						flatPic.flat = flatSysid;
+						flatPic.insert();
+					}
+				});
+
+
+			} else {
+				var flat = new GlideRecord('x_84446_advertrack_flat');
+				flat.initialize();
+				flat.origin_id = el.id;
+				flat.offer_from = el.oferta_od;
+				flat.offer_from = el.oferta_od;
+				flat.floor = el.poziom;
+				flat.furnished = el.umeblowane;
+				flat.construction_type = el.rodzaj_zabudowy;
+				flat.size = el.powierzchnia;
+				flat.rooms = el.liczba_pokoi;
+				flat.price_extra = el.czynsz;
+				flat.title = el.title;
+				flat.price = el.price;
+				var flatSysid = flat.insert();
+
+				el.pics.forEach(function(pic){
+					var flatPic = new GlideRecord('x_84446_advertrack_flat_pictures');
+					flatPic.initialize();
+					flatPic.link = pic;
+					flatPic.flat = flatSysid;
+					flatPic.insert();
+				});
+			}
+		});
+	},
+
+	type: 'AdvertProcessor'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 20:17:32</sys_created_on>
+        <sys_id>0d819c98db53801006fc7b6039961938</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>AdvertProcessor</sys_name>
+        <sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+        <sys_update_name>sys_script_include_0d819c98db53801006fc7b6039961938</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-03-27 00:34:50</sys_updated_on>
+    </sys_script_include>
+</record_update>

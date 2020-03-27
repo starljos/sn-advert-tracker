@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="link" label="Link" language="en" table="x_84446_advertrack_flat_pictures">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>link</element>
+            <help/>
+            <hint/>
+            <label>Link</label>
+            <language>en</language>
+            <name>x_84446_advertrack_flat_pictures</name>
+            <plural>Links</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-03-27 00:24:42</sys_created_on>
+            <sys_id>e8306ea5dbfb001006fc7b60399619f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Link</sys_name>
+            <sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+            <sys_update_name>sys_documentation_x_84446_advertrack_flat_pictures_link_en</sys_update_name>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-03-27 00:24:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

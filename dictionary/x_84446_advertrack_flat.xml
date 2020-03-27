@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Flat" max_length="40" name="x_84446_advertrack_flat" type="collection">
+        <element label="Construction Type" max_length="40" name="construction_type" type="string"/>
+        <element label="Floor" max_length="40" name="floor" type="string"/>
+        <element label="Furnished" max_length="40" name="furnished" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="ID" max_length="40" name="id" type="string" use_dynamic_default="true"/>
+        <element label="Offer From" max_length="40" name="offer_from" type="string"/>
+        <element label="Origin ID" max_length="100" name="origin_id" type="string"/>
+        <element label="Parking" max_length="40" name="parking" type="string"/>
+        <element label="Price" max_length="40" name="price" type="string"/>
+        <element label="Price Extra" max_length="40" name="price_extra" type="string"/>
+        <element label="Rooms" max_length="40" name="rooms" type="string"/>
+        <element label="Shower" max_length="40" name="shower" type="boolean"/>
+        <element label="Size" max_length="40" name="size" type="string"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+    </element>
+</database>

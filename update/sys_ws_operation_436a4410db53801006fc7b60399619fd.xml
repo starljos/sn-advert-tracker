@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Mazda POST</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	gs.info("MAREKLOG RECEIVED ADVERTS!");
+	gs.info(request.body);
+	gs.info(JSON.stringify(request.body));
+	gs.info(JSON.stringify(request.body.data));
+
+	new AdvertProcessor().processAd(request.body.data);
+
+	response.setStatus(200);
+	response.setContentType('application/json');
+	response.getStreamWriter().writeString('hell ye');
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_84446_advertrack/advert/mazda</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/mazda</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 19:48:33</sys_created_on>
+        <sys_id>436a4410db53801006fc7b60399619fd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Mazda POST</sys_name>
+        <sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+        <sys_update_name>sys_ws_operation_436a4410db53801006fc7b60399619fd</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-03-26 22:17:57</sys_updated_on>
+        <web_service_definition display_value="Advert">840a085cdb13801006fc7b6039961926</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

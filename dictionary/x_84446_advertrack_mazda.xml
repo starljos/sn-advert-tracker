@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Mazda" max_length="40" name="x_84446_advertrack_mazda" type="collection">
+    <element audit="true" label="Mazda" max_length="40" name="x_84446_advertrack_mazda" type="collection">
         <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="ID" max_length="40" name="id" type="string" use_dynamic_default="true"/>
-        <element label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Image" max_length="40" name="image" type="url"/>
+        <element label="KM" max_length="40" name="km" type="string"/>
         <element label="Link" max_length="1024" name="link" type="url"/>
+        <element label="Location" max_length="100" name="location" type="string"/>
+        <element label="Otomoto ID" max_length="40" name="otomoto_id" type="string"/>
+        <element label="Price" max_length="40" name="price" type="string"/>
+        <element label="Title" max_length="100" name="title" type="string"/>
+        <element label="Year" max_length="40" name="year" type="string"/>
     </element>
 </database>
