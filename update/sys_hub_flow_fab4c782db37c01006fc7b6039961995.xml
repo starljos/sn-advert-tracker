@@ -2,22 +2,22 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-paris-06-24-2020__patch4-11-25-2020</compiler_build>
-        <copied_from>7709d75edbde401006fc7b6039961976</copied_from>
-        <copied_from_name>Stayin' Alive</copied_from_name>
+        <compiler_build/>
+        <copied_from>763ce9a0db33081006fc7b6039961933</copied_from>
+        <copied_from_name>kuna-extension-pizza</copied_from_name>
         <description/>
-        <internal_name>mazda_scheduled_check</internal_name>
-        <label_cache>[{"name":"2443a831-58d4-49ac-a8d5-8bbfbac7d8a9.response","label":"1➛response","reference_display":"response","type":"string","base_type":"string"}]</label_cache>
-        <latest_snapshot>f138fa5e2f35a010c809bea62799b6ac</latest_snapshot>
-        <master_snapshot>b9f372fbdb6b041006fc7b6039961973</master_snapshot>
-        <name>Mazda Scheduled Check</name>
+        <internal_name>kunaextensionflathunt</internal_name>
+        <label_cache>[{"name":"Created_1.current.say_text","label":"Trigger➛Bot Action Record➛Text","reference":"","reference_display":"Text","type":"string","base_type":"string","parent_table_name":"x_84446_vector_action","column_name":"say_text"}]</label_cache>
+        <latest_snapshot>fb9ec456dbbbc01006fc7b6039961955</latest_snapshot>
+        <master_snapshot>6cf9474adb37c01006fc7b603996192a</master_snapshot>
+        <name>kuna-extension-flat-hunt 8am</name>
         <natlang/>
         <outputs/>
-        <remote_trigger_id>31f372fbdb6b041006fc7b603996198e</remote_trigger_id>
+        <remote_trigger_id>30f9474adb37c01006fc7b603996193d</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -26,36 +26,36 @@
         <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
+        <sys_created_on>2020-03-28 16:21:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f0223e3bdb6b041006fc7b60399619ec</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Mazda Scheduled Check</sys_name>
+        <sys_id>fab4c782db37c01006fc7b6039961995</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>kuna-extension-flat-hunt 8am</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
-        <sys_update_name>sys_hub_flow_f0223e3bdb6b041006fc7b60399619ec</sys_update_name>
+        <sys_update_name>sys_hub_flow_fab4c782db37c01006fc7b6039961995</sys_update_name>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
+        <sys_updated_on>2020-05-16 19:17:56</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
-    <sys_translated_text action="delete_multiple" query="documentkey=f0223e3bdb6b041006fc7b60399619ec"/>
-    <sys_variable_value action="delete_multiple" query="document_key=f0223e3bdb6b041006fc7b60399619ec"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=fab4c782db37c01006fc7b6039961995"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fab4c782db37c01006fc7b6039961995"/>
     <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
         <day_of_month>1</day_of_month>
         <day_of_week/>
         <name/>
-        <run_period>1970-01-02 00:00:00</run_period>
-        <run_start>2020-03-21 15:21:43</run_start>
+        <run_period>1970-01-01 05:00:00</run_period>
+        <run_start>2020-03-28 16:44:06</run_start>
         <sys_class_name>sys_flow_timer_trigger</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:43</sys_created_on>
+        <sys_created_on>2020-03-28 16:44:06</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>31f372fbdb6b041006fc7b603996198e</sys_id>
+        <sys_id>30f9474adb37c01006fc7b603996193d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -64,8 +64,8 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
-        <time/>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
+        <time>1970-01-01 07:00:00</time>
         <timer_type>1</timer_type>
     </sys_flow_timer_trigger>
     <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
@@ -75,24 +75,24 @@
         <condition/>
         <conditional>false</conditional>
         <entered_time/>
-        <name>Trigger:31f372fbdb6b041006fc7b603996198e</name>
+        <name>Trigger:30f9474adb37c01006fc7b603996193d</name>
         <offset/>
         <offset_type>0</offset_type>
         <run_as display_value="Marek Polasik">63984c83db92330006fc7b6039961991</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek/>
-        <run_period>1970-01-02 00:00:00</run_period>
-        <run_start>2020-03-21 15:21:43</run_start>
-        <run_time/>
+        <run_period>1970-01-01 05:00:00</run_period>
+        <run_start>2020-03-28 16:44:06</run_start>
+        <run_time>1970-01-01 07:00:00</run_time>
         <run_type>periodically</run_type>
-        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('31f372fbdb6b041006fc7b603996198e');]]></script>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('30f9474adb37c01006fc7b603996193d');]]></script>
         <source_filter/>
         <source_table/>
         <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:43</sys_created_on>
-        <sys_id>b5f372fbdb6b041006fc7b603996198e</sys_id>
+        <sys_created_on>2020-03-28 16:44:06</sys_created_on>
+        <sys_id>b4f9474adb37c01006fc7b603996193d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -100,12 +100,12 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
         <time_zone/>
-        <trigger display_value="">31f372fbdb6b041006fc7b603996198e</trigger>
+        <trigger display_value="">30f9474adb37c01006fc7b603996193d</trigger>
         <upgrade_safe>false</upgrade_safe>
     </sys_flow_trigger_auto_script>
-    <sys_hub_flow_component action="delete_multiple" query="flow=f0223e3bdb6b041006fc7b60399619ec^sys_idNOT IN7c223e3bdb6b041006fc7b60399619f7"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=fab4c782db37c01006fc7b6039961995^sys_idNOT IN43b4c782db37c01006fc7b60399619e1"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Fire MID Python Vector Script">ba1a8eefdb74041006fc7b60399619fd</action_type>
@@ -113,85 +113,85 @@
         <comment/>
         <compiled_snapshot>ba1a8eefdb74041006fc7b60399619fd</compiled_snapshot>
         <display_text/>
-        <flow display_value="Mazda Scheduled Check">f0223e3bdb6b041006fc7b60399619ec</flow>
+        <flow display_value="kuna-extension-flat-hunt 8am">fab4c782db37c01006fc7b6039961995</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
-        <sys_id>7c223e3bdb6b041006fc7b60399619f7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_created_on>2020-03-28 16:21:18</sys_created_on>
+        <sys_id>43b4c782db37c01006fc7b60399619e1</sys_id>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-01-21 16:21:50</sys_updated_on>
-        <ui_id>2443a831-58d4-49ac-a8d5-8bbfbac7d8a9</ui_id>
+        <sys_updated_on>2020-03-28 21:44:08</sys_updated_on>
+        <ui_id>43b97cb0-266d-4700-915c-cc34cd27344a</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=7c223e3bdb6b041006fc7b60399619f7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=43b4c782db37c01006fc7b60399619e1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>7c223e3bdb6b041006fc7b60399619f7</document_key>
+        <document_key>43b4c782db37c01006fc7b60399619e1</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
-        <sys_id>78223e3bdb6b041006fc7b60399619fb</sys_id>
+        <sys_created_on>2020-03-28 16:21:18</sys_created_on>
+        <sys_id>8bb4c782db37c01006fc7b60399619e4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-03-21 15:21:39</sys_updated_on>
-        <value>mazda</value>
+        <sys_updated_on>2020-03-28 16:22:17</sys_updated_on>
+        <value>flat</value>
         <variable display_value="">7a1a8eefdb74041006fc7b60399619fe</variable>
     </sys_variable_value>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=f0223e3bdb6b041006fc7b60399619ec^sys_idNOT INf8223e3bdb6b041006fc7b60399619fc"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fab4c782db37c01006fc7b6039961995^sys_idNOT IN952ac7c6db37c01006fc7b60399619ac"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Mazda Scheduled Check">f0223e3bdb6b041006fc7b60399619ec</flow>
+        <flow display_value="kuna-extension-flat-hunt 8am">fab4c782db37c01006fc7b6039961995</flow>
         <name>Repeat</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
-        <sys_id>f8223e3bdb6b041006fc7b60399619fc</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_created_on>2020-03-28 16:44:57</sys_created_on>
+        <sys_id>952ac7c6db37c01006fc7b60399619ac</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
         <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
         <trigger_type>repeat</trigger_type>
     </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=f8223e3bdb6b041006fc7b60399619fc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=952ac7c6db37c01006fc7b60399619ac"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_trigger_instance</document>
-        <document_key>f8223e3bdb6b041006fc7b60399619fc</document_key>
+        <document_key>952ac7c6db37c01006fc7b60399619ac</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
-        <sys_id>b4223e3bdb6b041006fc7b60399619fe</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2020-03-28 16:44:57</sys_created_on>
+        <sys_id>592a4b4adb37c01006fc7b6039961933</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:38</sys_updated_on>
-        <value>1970-01-02 00:00:00</value>
+        <sys_updated_on>2020-03-28 16:45:05</sys_updated_on>
+        <value>1970-01-01 05:00:00</value>
         <variable display_value="">1c5f4d94c32222002841b63b12d3aeb3</variable>
     </sys_variable_value>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=f0223e3bdb6b041006fc7b60399619ec^sys_idNOT INb0223e3bdb6b041006fc7b60399619ef"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fab4c782db37c01006fc7b6039961995^sys_idNOT IN3ab4c782db37c01006fc7b6039961997"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>f0223e3bdb6b041006fc7b60399619ec</id>
-        <name>Mazda Scheduled Check</name>
+        <id>fab4c782db37c01006fc7b6039961995</id>
+        <name>kuna-extension-flat-hunt</name>
         <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
-        <sys_id>b0223e3bdb6b041006fc7b60399619ef</sys_id>
+        <sys_created_on>2020-03-28 16:21:18</sys_created_on>
+        <sys_id>3ab4c782db37c01006fc7b6039961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -199,9 +199,9 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-03-21 15:13:43</sys_updated_on>
+        <sys_updated_on>2020-03-28 16:21:18</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_action_instance action="delete_multiple" query="flow=f0223e3bdb6b041006fc7b60399619ec^sys_idNOT IN7c223e3bdb6b041006fc7b60399619f7"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=fab4c782db37c01006fc7b6039961995^sys_idNOT IN43b4c782db37c01006fc7b60399619e1"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Fire MID Python Vector Script">ba1a8eefdb74041006fc7b60399619fd</action_type>
@@ -209,51 +209,51 @@
         <comment/>
         <compiled_snapshot>ba1a8eefdb74041006fc7b60399619fd</compiled_snapshot>
         <display_text/>
-        <flow display_value="Mazda Scheduled Check">f0223e3bdb6b041006fc7b60399619ec</flow>
+        <flow display_value="kuna-extension-flat-hunt 8am">fab4c782db37c01006fc7b6039961995</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
-        <sys_id>7c223e3bdb6b041006fc7b60399619f7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_created_on>2020-03-28 16:21:18</sys_created_on>
+        <sys_id>43b4c782db37c01006fc7b60399619e1</sys_id>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-01-21 16:21:50</sys_updated_on>
-        <ui_id>2443a831-58d4-49ac-a8d5-8bbfbac7d8a9</ui_id>
+        <sys_updated_on>2020-03-28 21:44:08</sys_updated_on>
+        <ui_id>43b97cb0-266d-4700-915c-cc34cd27344a</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=7c223e3bdb6b041006fc7b60399619f7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=43b4c782db37c01006fc7b60399619e1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>7c223e3bdb6b041006fc7b60399619f7</document_key>
+        <document_key>43b4c782db37c01006fc7b60399619e1</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:13:43</sys_created_on>
-        <sys_id>78223e3bdb6b041006fc7b60399619fb</sys_id>
+        <sys_created_on>2020-03-28 16:21:18</sys_created_on>
+        <sys_id>8bb4c782db37c01006fc7b60399619e4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-03-21 15:21:39</sys_updated_on>
-        <value>mazda</value>
+        <sys_updated_on>2020-03-28 16:22:17</sys_updated_on>
+        <value>flat</value>
         <variable display_value="">7a1a8eefdb74041006fc7b60399619fe</variable>
     </sys_variable_value>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f0223e3bdb6b041006fc7b60399619ec^sys_idNOT IN02f372fbdb6b041006fc7b6039961991"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=fab4c782db37c01006fc7b6039961995^sys_idNOT INb4f9474adb37c01006fc7b6039961940"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"02f372fbdb6b041006fc7b6039961991","name":"plan"}}</plan>
-        <plan_id>f0223e3bdb6b041006fc7b60399619ec</plan_id>
-        <snapshot>f138fa5e2f35a010c809bea62799b6ac</snapshot>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b4f9474adb37c01006fc7b6039961940","name":"plan"}}</plan>
+        <plan_id>fab4c782db37c01006fc7b6039961995</plan_id>
+        <snapshot>fb9ec456dbbbc01006fc7b6039961955</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:43</sys_created_on>
+        <sys_created_on>2020-03-28 16:44:06</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>02f372fbdb6b041006fc7b6039961991</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_id>b4f9474adb37c01006fc7b6039961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -261,8 +261,8 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
-        <trigger display_value="">31f372fbdb6b041006fc7b603996198e</trigger>
+        <sys_updated_on>2020-03-28 16:44:06</sys_updated_on>
+        <trigger display_value="">30f9474adb37c01006fc7b603996193d</trigger>
     </sys_flow_trigger_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -274,13 +274,13 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <internal_name>mazda_scheduled_check</internal_name>
-        <label_cache>[{"name":"2443a831-58d4-49ac-a8d5-8bbfbac7d8a9.response","label":"1➛response","reference_display":"response","type":"string","base_type":"string"}]</label_cache>
+        <internal_name>kunaextensionflathunt_8am</internal_name>
+        <label_cache>[{"name":"Created_1.current.say_text","label":"Trigger➛Bot Action Record➛Text","reference":"","reference_display":"Text","type":"string","base_type":"string","parent_table_name":"x_84446_vector_action","column_name":"say_text"}]</label_cache>
         <master>true</master>
-        <name>Mazda Scheduled Check</name>
+        <name>kuna-extension-flat-hunt 8am</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Mazda Scheduled Check">f0223e3bdb6b041006fc7b60399619ec</parent_flow>
+        <parent_flow display_value="kuna-extension-flat-hunt 8am">fab4c782db37c01006fc7b6039961995</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -288,10 +288,10 @@
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>b9f372fbdb6b041006fc7b6039961973</sys_id>
+        <sys_id>6cf9474adb37c01006fc7b603996192a</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -300,12 +300,12 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
-    <sys_translated_text action="delete_multiple" query="documentkey=b9f372fbdb6b041006fc7b6039961973"/>
-    <sys_variable_value action="delete_multiple" query="document_key=b9f372fbdb6b041006fc7b6039961973"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=b9f372fbdb6b041006fc7b6039961973^sys_idNOT IN39f372fbdb6b041006fc7b6039961977"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=6cf9474adb37c01006fc7b603996192a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6cf9474adb37c01006fc7b603996192a"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=6cf9474adb37c01006fc7b603996192a^sys_idNOT IN74f9474adb37c01006fc7b6039961930"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Fire MID Python Vector Script">ba1a8eefdb74041006fc7b60399619fd</action_type>
@@ -313,13 +313,13 @@
         <comment/>
         <compiled_snapshot>ba1a8eefdb74041006fc7b60399619fd</compiled_snapshot>
         <display_text/>
-        <flow display_value="Mazda Scheduled Check">b9f372fbdb6b041006fc7b6039961973</flow>
+        <flow display_value="kuna-extension-flat-hunt 8am">6cf9474adb37c01006fc7b603996192a</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
-        <sys_id>39f372fbdb6b041006fc7b6039961977</sys_id>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
+        <sys_id>74f9474adb37c01006fc7b6039961930</sys_id>
         <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -327,71 +327,85 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
-        <ui_id>2443a831-58d4-49ac-a8d5-8bbfbac7d8a9</ui_id>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
+        <ui_id>43b97cb0-266d-4700-915c-cc34cd27344a</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=39f372fbdb6b041006fc7b6039961977"/>
+    <sys_variable_value action="delete_multiple" query="document_key=74f9474adb37c01006fc7b6039961930"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>39f372fbdb6b041006fc7b6039961977</document_key>
+        <document_key>74f9474adb37c01006fc7b6039961930</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
-        <sys_id>79f372fbdb6b041006fc7b6039961978</sys_id>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
+        <sys_id>bcf9474adb37c01006fc7b6039961932</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-03-21 15:21:42</sys_updated_on>
-        <value>mazda</value>
+        <sys_updated_on>2020-03-28 16:44:05</sys_updated_on>
+        <value>flat</value>
         <variable display_value="">7a1a8eefdb74041006fc7b60399619fe</variable>
     </sys_variable_value>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=b9f372fbdb6b041006fc7b6039961973^sys_idNOT IN7df372fbdb6b041006fc7b6039961978"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=6cf9474adb37c01006fc7b603996192a^sys_idNOT INb4f9474adb37c01006fc7b6039961933"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Mazda Scheduled Check">b9f372fbdb6b041006fc7b6039961973</flow>
+        <flow display_value="kuna-extension-flat-hunt 8am">6cf9474adb37c01006fc7b603996192a</flow>
         <name>Repeat</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
-        <sys_id>7df372fbdb6b041006fc7b6039961978</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
+        <sys_id>b4f9474adb37c01006fc7b6039961933</sys_id>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
         <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
         <trigger_type>repeat</trigger_type>
     </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=7df372fbdb6b041006fc7b6039961978"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b4f9474adb37c01006fc7b6039961933"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_trigger_instance</document>
-        <document_key>7df372fbdb6b041006fc7b6039961978</document_key>
+        <document_key>b4f9474adb37c01006fc7b6039961933</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
-        <sys_id>f1f372fbdb6b041006fc7b6039961979</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2020-03-28 16:45:00</sys_created_on>
+        <sys_id>0e2a4b4adb37c01006fc7b60399619b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
-        <value>1970-01-02 00:00:00</value>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
+        <value>1970-01-01 05:00:00</value>
         <variable display_value="">1c5f4d94c32222002841b63b12d3aeb3</variable>
     </sys_variable_value>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=b9f372fbdb6b041006fc7b6039961973^sys_idNOT INbdf372fbdb6b041006fc7b6039961973"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b4f9474adb37c01006fc7b6039961933</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
+        <sys_id>3cf9474adb37c01006fc7b6039961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-03-28 16:44:05</sys_updated_on>
+        <value>1970-01-01 08:00:00</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6cf9474adb37c01006fc7b603996192a^sys_idNOT INe8f9474adb37c01006fc7b603996192b"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>b9f372fbdb6b041006fc7b6039961973</id>
-        <name>Mazda Scheduled Check</name>
+        <id>6cf9474adb37c01006fc7b603996192a</id>
+        <name>kuna-extension-flat-hunt 8am</name>
         <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
-        <sys_id>bdf372fbdb6b041006fc7b6039961973</sys_id>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
+        <sys_id>e8f9474adb37c01006fc7b603996192b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -399,9 +413,9 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-03-21 15:21:42</sys_updated_on>
+        <sys_updated_on>2020-03-28 16:44:05</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_action_instance action="delete_multiple" query="flow=b9f372fbdb6b041006fc7b6039961973^sys_idNOT IN39f372fbdb6b041006fc7b6039961977"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=6cf9474adb37c01006fc7b603996192a^sys_idNOT IN74f9474adb37c01006fc7b6039961930"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Fire MID Python Vector Script">ba1a8eefdb74041006fc7b60399619fd</action_type>
@@ -409,13 +423,13 @@
         <comment/>
         <compiled_snapshot>ba1a8eefdb74041006fc7b60399619fd</compiled_snapshot>
         <display_text/>
-        <flow display_value="Mazda Scheduled Check">b9f372fbdb6b041006fc7b6039961973</flow>
+        <flow display_value="kuna-extension-flat-hunt 8am">6cf9474adb37c01006fc7b603996192a</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
-        <sys_id>39f372fbdb6b041006fc7b6039961977</sys_id>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
+        <sys_id>74f9474adb37c01006fc7b6039961930</sys_id>
         <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -423,22 +437,22 @@
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-09-03 19:53:43</sys_updated_on>
-        <ui_id>2443a831-58d4-49ac-a8d5-8bbfbac7d8a9</ui_id>
+        <sys_updated_on>2020-03-28 16:45:11</sys_updated_on>
+        <ui_id>43b97cb0-266d-4700-915c-cc34cd27344a</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=39f372fbdb6b041006fc7b6039961977"/>
+    <sys_variable_value action="delete_multiple" query="document_key=74f9474adb37c01006fc7b6039961930"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>39f372fbdb6b041006fc7b6039961977</document_key>
+        <document_key>74f9474adb37c01006fc7b6039961930</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-21 15:21:42</sys_created_on>
-        <sys_id>79f372fbdb6b041006fc7b6039961978</sys_id>
+        <sys_created_on>2020-03-28 16:44:05</sys_created_on>
+        <sys_id>bcf9474adb37c01006fc7b6039961932</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-03-21 15:21:42</sys_updated_on>
-        <value>mazda</value>
+        <sys_updated_on>2020-03-28 16:44:05</sys_updated_on>
+        <value>flat</value>
         <variable display_value="">7a1a8eefdb74041006fc7b60399619fe</variable>
     </sys_variable_value>
 </record_update>

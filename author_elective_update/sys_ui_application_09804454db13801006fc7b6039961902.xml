@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Mazda</name>
+        <order/>
+        <roles>x_84446_advertrack.mazda_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 19:03:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>09804454db13801006fc7b6039961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mazda</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+        <sys_update_name>sys_ui_application_09804454db13801006fc7b6039961902</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 19:03:16</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</application>
+        <file_path/>
+        <instance_id>c6c265c7db783f0042b321c40596199a</instance_id>
+        <instance_name>dev81817</instance_name>
+        <name>sys_ui_application_09804454db13801006fc7b6039961902</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Mazda</name><order/><roles>x_84446_advertrack.mazda_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>marek.polasik</sys_created_by><sys_created_on>2020-02-26 19:03:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>09804454db13801006fc7b6039961902</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Mazda</sys_name><sys_overrides/><sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package><sys_policy/><sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope><sys_update_name>sys_ui_application_09804454db13801006fc7b6039961902</sys_update_name><sys_updated_by>marek.polasik</sys_updated_by><sys_updated_on>2020-02-26 19:03:16</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-2064178557</payload_hash>
+        <record_name>Mazda</record_name>
+        <reverted_from/>
+        <source>7d604054db13801006fc7b60399619e9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 19:03:16</sys_created_on>
+        <sys_id>8d804454db13801006fc7b6039961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17082e1ba830000001</sys_recorded_at>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 19:03:16</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>85804454c01380104c57c4a212b0ce04</update_guid>
+        <update_guid_history>85804454c01380104c57c4a212b0ce04:-2064178557</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-03-27 16:46:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>4fefabebc04b42989166885246fdfd44</sys_id>
+        <sys_metadata>09804454db13801006fc7b6039961902</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mazda</sys_name>
+        <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+        <sys_scope_delete display_value="">37ae42c9dc8b488c9e7e19ea68023a90</sys_scope_delete>
+        <sys_update_name>sys_ui_application_09804454db13801006fc7b6039961902</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_09804454db13801006fc7b6039961902">8d804454db13801006fc7b6039961904</sys_update_version>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-03-27 16:46:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

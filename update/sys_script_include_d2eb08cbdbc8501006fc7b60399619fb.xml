@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_84446_advertrack.SlackMessageBuilderAdvert</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SlackMessageBuilderAdvert</name>
+        <script><![CDATA[var SlackMessageBuilderAdvert = Class.create();
+SlackMessageBuilderAdvert.prototype = Object.extendsObject(x_84446_vector.SlackMessageBuilder, {
+
+	flatInfo: function (gr, oldGr) {
+		try {
+
+			// GET IMAGE
+			var image = '';
+			var imgGr = new GlideRecord('x_84446_advertrack_flat_pictures');
+			if (imgGr.get('flat', gr.sys_id)) {
+				image = imgGr.link;
+			}
+
+			// GET ALL FIELDS
+			var grSD = new GlideRecord('sys_dictionary');
+			grSD.addEncodedQuery("name=x_84446_advertrack_flat^elementNOT LIKEsys");
+			grSD.orderBy('max_length');
+			grSD.query();
+			var detailsStr = '';
+			while (grSD.next()) {
+				var field = grSD.getValue('element');
+				var label = grSD.getValue('column_label');
+
+				detailsStr += label + ': ' + gr.getValue(field) + " \n";
+				var prop = grSD.element;
+
+			}
+
+			var updateDetails = '';
+
+			if (oldGr) {
+				if ((gr.price + '') != (oldGr.price + '')){
+					updateDetails = "\n UPDATES  \n"  + 'Old Price: ' + gr.getValue('price') + " \n New Price: " + oldGr.getValue('price');
+					detailsStr += updateDetails;
+				}
+			}
+
+			var channel = 'C010HUTAKQB';
+			var payload = {
+				"channel": channel,
+				"blocks": [{
+					"type": "section",
+					"text": {
+						"type": "mrkdwn",
+						"text": "*NOTABLE FLAT <" + gr.link + "|" + gr.title + ">*"
+					}
+				},
+						   {
+							   "type": "image",
+							   "title": {
+								   "type": "plain_text",
+								   "text": "image1",
+								   "emoji": true
+							   },
+							   "image_url": image + '',
+							   "alt_text": "image1"
+						   },
+						   {
+							   "type": "divider"
+						   },
+						   {
+							   "type": "context",
+							   "elements": [{
+								   "type": "mrkdwn",
+								   "text": detailsStr
+							   }]
+						   }
+						  ]
+
+			}
+
+			var payloadString = JSON.stringify(payload);
+
+			return payloadString;
+
+		} catch (e) {
+			gs.info(e)
+			//this.error(e);
+		}
+	},
+
+	newMazda: function (gr) {
+		try {
+
+			var channel = 'CUJR6HN3F';
+			var payload = {
+				"channel": channel,
+				"blocks": [{
+					"type": "section",
+					"text": {
+						"type": "mrkdwn",
+						"text": "*New Mazda MX-5 <" + gr.link + "|" + gr.title + ">*"
+					}
+				},
+						   {
+							   "type": "image",
+							   "title": {
+								   "type": "plain_text",
+								   "text": "image1",
+								   "emoji": true
+							   },
+							   "image_url": gr.image + '',
+							   "alt_text": "image1"
+						   },
+						   {
+							   "type": "divider"
+						   },
+						   {
+							   "type": "context",
+							   "elements": [{
+								   "type": "mrkdwn",
+								   "text": "location: " + gr.location + " \n year: "+gr.year+" \n KM: "+gr.km+" \n price: " + gr.price
+							   }]
+						   }
+						  ]
+
+			}
+
+			var payloadString = JSON.stringify(payload);
+
+			return payloadString;
+
+		} catch (e) {
+			gs.info(e);
+		}
+	},
+
+	updatedMazda: function (gr, grOld) {
+		try {
+
+			var channel = 'CUJR6HN3F';
+			var payload = {
+				"channel": channel,
+				"blocks": [{
+					"type": "section",
+					"text": {
+						"type": "mrkdwn",
+						"text": "*Updated Mazda MX-5 <" + gr.link + "|" + gr.title + ">*"
+					}
+				},
+						   {
+							   "type": "image",
+							   "title": {
+								   "type": "plain_text",
+								   "text": "image1",
+								   "emoji": true
+							   },
+							   "image_url": gr.image + '',
+							   "alt_text": "image1"
+						   },
+						   {
+							   "type": "divider"
+						   },
+						   {
+							   "type": "context",
+							   "elements": [{
+								   "type": "mrkdwn",
+								   "text": "location: " + gr.location + " \n year: "+gr.year+" \n KM: "+gr.km+"\n old price: " + grOld.price + "\n new price: " + gr.price
+							   }]
+						   }
+						  ]
+			}
+
+			var payloadString = JSON.stringify(payload);
+
+			return payloadString;
+
+		} catch (e) {
+			gs.info(e)
+			//this.error(e);
+		}
+	},
+
+	error: function (e) {
+
+		e = JSON.stringify(e)
+		var sender = new SlackMessageSender("CQ2S1L1D2");
+		sender.postMsg("coś się popsuło w SlackMessageBuilderAdvert...", "s");
+		sender.postMsg('```' + e + '```', "s");
+
+	},
+
+	type: 'SlackMessageBuilderAdvert'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-04-12 15:43:25</sys_created_on>
+        <sys_id>d2eb08cbdbc8501006fc7b60399619fb</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>SlackMessageBuilderAdvert</sys_name>
+        <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+        <sys_update_name>sys_script_include_d2eb08cbdbc8501006fc7b60399619fb</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-09-30 20:11:22</sys_updated_on>
+    </sys_script_include>
+</record_update>

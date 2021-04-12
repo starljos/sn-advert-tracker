@@ -18,7 +18,17 @@ AdvertProcessor.prototype = {
 
 			var mazdaExists = new GlideRecord('x_84446_advertrack_mazda');
 			var format = '.jpg';
-			var img = el.image.substring(0, el.image.indexOf(format) + format.length);
+			var suf = ' 768w';
+			var img = '';
+			
+			var substr = (el.image.indexOf(format) == -1) ? suf : format;
+			
+			if (substr === format)
+				img = el.image.substring(0, el.image.indexOf(substr) + substr.length);
+			
+			if (substr === suf)
+				img = el.image.substring(0, el.image.indexOf(substr));
+						
 			var exists = mazdaExists.get('otomoto_id', el.id);
 
 			if (exists) {
@@ -48,6 +58,8 @@ AdvertProcessor.prototype = {
 	},
 
 	processFlatAd: function (payload) {
+		
+		var archivedQuery = "";
 
 		payload.forEach(function (el) {
 
@@ -55,9 +67,7 @@ AdvertProcessor.prototype = {
 			var exists = flatExists.get('origin_id', el.id);
 
 			if (exists) {
-				gs.info("matched flat!");
 				flatExists.origin_id = el.id;
-				flatExists.offer_from = el.oferta_od;
 				flatExists.offer_from = el.oferta_od;
 				flatExists.floor = el.poziom;
 				flatExists.furnished = el.umeblowane;
@@ -67,12 +77,16 @@ AdvertProcessor.prototype = {
 				flatExists.price_extra = el.czynsz;
 				flatExists.title = el.title;
 				flatExists.price = el.price;
+				flatExists.description = el.description;
+				flatExists.link = el.url;
+				flatExists.deposit = el.kaucja;
+				
 				var flatSysid = flatExists.update();
 
 				el.pics.forEach(function(pic){
 
 					var flatPicExists = new GlideRecord('x_84446_advertrack_flat_pictures');
-					var picExists = flatPicExists.get('link', el.id);
+					var picExists = flatPicExists.get('link', pic);
 
 					if (!picExists){
 						var flatPic = new GlideRecord('x_84446_advertrack_flat_pictures');
@@ -89,7 +103,6 @@ AdvertProcessor.prototype = {
 				flat.initialize();
 				flat.origin_id = el.id;
 				flat.offer_from = el.oferta_od;
-				flat.offer_from = el.oferta_od;
 				flat.floor = el.poziom;
 				flat.furnished = el.umeblowane;
 				flat.construction_type = el.rodzaj_zabudowy;
@@ -98,6 +111,10 @@ AdvertProcessor.prototype = {
 				flat.price_extra = el.czynsz;
 				flat.title = el.title;
 				flat.price = el.price;
+				flat.description = el.description;
+				flat.link = el.url;
+				flat.deposit = el.kaucja;
+				
 				var flatSysid = flat.insert();
 
 				el.pics.forEach(function(pic){
@@ -108,7 +125,20 @@ AdvertProcessor.prototype = {
 					flatPic.insert();
 				});
 			}
+			
+			archivedQuery += "^origin_id!="+el.id;
+			// add origin id to array
 		});
+		
+		// query all flats and set those not sent to archived
+		
+		var flatArchive = new GlideRecord('x_84446_advertrack_flat');
+		flatArchive.addEncodedQuery(archivedQuery);
+		flatArchive.query();
+		while (flatArchive.next()){
+			flatArchive.archived = true;
+			flatArchive.update();
+		}
 	},
 
 	type: 'AdvertProcessor'
@@ -117,13 +147,13 @@ AdvertProcessor.prototype = {
         <sys_created_by>marek.polasik</sys_created_by>
         <sys_created_on>2020-02-26 20:17:32</sys_created_on>
         <sys_id>0d819c98db53801006fc7b6039961938</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>AdvertProcessor</sys_name>
-        <sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+        <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+        <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
         <sys_update_name>sys_script_include_0d819c98db53801006fc7b6039961938</sys_update_name>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-03-27 00:34:50</sys_updated_on>
+        <sys_updated_on>2020-04-12 18:11:37</sys_updated_on>
     </sys_script_include>
 </record_update>

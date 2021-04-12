@@ -1,17 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Flat" max_length="40" name="x_84446_advertrack_flat" type="collection">
+    <element audit="true" label="Flat" max_length="40" name="x_84446_advertrack_flat" sizeclass="279" type="collection">
+        <element label="Characteristics" max_length="4000" name="advantages" reference="x_84446_advertrack_flat_characteristics" type="glide_list"/>
+        <element label="Apartment Plan" max_length="40" name="apartment_plan" type="html"/>
+        <element label="Archived" max_length="40" name="archived" type="boolean"/>
+        <element label="Considering" max_length="40" name="considering" type="boolean"/>
         <element label="Construction Type" max_length="40" name="construction_type" type="string"/>
+        <element label="Deposit" max_length="40" name="deposit" type="string"/>
+        <element label="Description" max_length="8000" name="description" type="string"/>
+        <element label="Developer" max_length="32" name="developer" reference="x_84446_advertrack_developer" type="reference"/>
+        <element label="Disadvantages" max_length="4000" name="disadvantages" reference="x_84446_advertrack_flat_characteristics" reference_qual="is_advantage=false^EQ" reference_qual_condition="is_advantage=false^EQ" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Estate" max_length="32" name="estate" reference="x_84446_advertrack_estate" type="reference"/>
         <element label="Floor" max_length="40" name="floor" type="string"/>
         <element label="Furnished" max_length="40" name="furnished" type="string"/>
-        <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="ID" max_length="40" name="id" type="string" use_dynamic_default="true"/>
+        <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="ID" max_length="40" name="id" read_only="true" type="string" use_dynamic_default="true"/>
+        <element choice="1" label="Kitchen" max_length="40" name="kitchen" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Aneks" value="Aneks"/>
+                <element inactive_on_update="false" label="Separate" value="Separate"/>
+            </choice>
+        </element>
+        <element label="Link" max_length="1024" name="link" type="url"/>
         <element label="Offer From" max_length="40" name="offer_from" type="string"/>
         <element label="Origin ID" max_length="100" name="origin_id" type="string"/>
         <element label="Parking" max_length="40" name="parking" type="string"/>
+        <element label="Plan" max_length="8000" name="plan" type="html"/>
         <element label="Price" max_length="40" name="price" type="string"/>
         <element label="Price Extra" max_length="40" name="price_extra" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Price per square" max_length="40" name="price_square" type="string"/>
         <element label="Rooms" max_length="40" name="rooms" type="string"/>
+        <element label="Room No" max_length="32" name="room_no" type="string"/>
         <element label="Shower" max_length="40" name="shower" type="boolean"/>
         <element label="Size" max_length="40" name="size" type="string"/>
         <element label="Title" max_length="40" name="title" type="string"/>
+        <element choice="1" label="Verdict" max_length="40" name="yep_nope" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="NOPE" value="nope"/>
+                <element inactive_on_update="false" label="YEP" value="yep"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="estate"/>
+        </index>
+        <index name="index2">
+            <element name="developer"/>
+        </index>
     </element>
 </database>

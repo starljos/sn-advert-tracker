@@ -5,21 +5,59 @@
         <consumes_customized>false</consumes_customized>
         <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
-        <http_method>POST</http_method>
-        <name>Flat POST</name>
+        <http_method>GET</http_method>
+        <name>Get Next Mazda</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-	
-new AdvertProcessor().processFlatAd(request.body.data);
-	
+
+	var mazdaSysid = request.pathParams.sys_id;
+	var isFirst = true;
+
+	if (mazdaSysid != "null" || mazdaSysid != "first") {
+		isFirst = false;
+	}
+
+
+	var gr = new GlideRecord('x_84446_advertrack_mazda');
+	gr.orderByDesc('sys_updated_on');
+	gr.query();
+	while (gr.next()) {
+
+		if (gr.getValue("sys_id") == mazdaSysid) {
+
+			if (gr.next()) {
+				var mazdaOb = {};
+				mazdaOb = populateOb(gr);
+			} else {
+				var gr2 = new GlideRecord('x_84446_advertrack_mazda');
+				gr2.orderByDesc('sys_updated_on');
+				gr2.query();
+				if (gr2.next()) {
+					populateOb(gr2);
+				}
+			}
+		}
+	}
+
 	response.setStatus(200);
 	response.setContentType('application/json');
-	response.getStreamWriter().writeString('hell ye flatz');
+	response.getStreamWriter().writeString(JSON.stringify(mazdaOb));
+
+	function populateOb(gr) {
+		var ob = {};
+		for (property in gr) {
+
+			if (gr[property]) {
+				ob[property] = gr[property] + '';
+			}
+		}
+		return ob;
+	}
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_84446_advertrack/advert/flat</operation_uri>
+        <operation_uri>/api/x_84446_advertrack/advert/getnextmazda/{sys_id}</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
-        <relative_path>/flat</relative_path>
+        <relative_path>/getnextmazda/{sys_id}</relative_path>
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
@@ -27,16 +65,16 @@ new AdvertProcessor().processFlatAd(request.body.data);
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
-        <sys_created_on>2020-03-26 22:18:38</sys_created_on>
-        <sys_id>b9534661db7b001006fc7b60399619c8</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Flat POST</sys_name>
+        <sys_created_on>2020-04-17 20:33:05</sys_created_on>
+        <sys_id>bbfdf264dbd0101006fc7b6039961916</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Get Next Mazda</sys_name>
         <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
-        <sys_update_name>sys_ws_operation_b9534661db7b001006fc7b60399619c8</sys_update_name>
+        <sys_update_name>sys_ws_operation_bbfdf264dbd0101006fc7b6039961916</sys_update_name>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-04-17 20:44:29</sys_updated_on>
+        <sys_updated_on>2020-04-18 14:14:53</sys_updated_on>
         <web_service_definition display_value="Advert">840a085cdb13801006fc7b6039961926</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
