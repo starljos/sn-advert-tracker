@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="8d28e6cd2fd66010c809bea62799b6d9" sys_domain="global" table="x_84446_advertrack_flat" version="3" view="Developer">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>estate</element>
+            <position>0</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>a5f58caa2f1ae410c809bea62799b624</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>room_no</element>
+            <position>1</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>21f58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>size</element>
+            <position>2</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>a1f58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>price</element>
+            <position>3</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>25f58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>price_square</element>
+            <position>4</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>a5f58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>advantages</element>
+            <position>5</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>29f58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>a9f58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>floor</element>
+            <position>7</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>2df58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rooms</element>
+            <position>8</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>adf58caa2f1ae410c809bea62799b625</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>kitchen</element>
+            <position>9</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>21f58caa2f1ae410c809bea62799b626</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>developer</element>
+            <position>10</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>a1f58caa2f1ae410c809bea62799b626</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>25f58caa2f1ae410c809bea62799b626</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>12</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>a5f58caa2f1ae410c809bea62799b626</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>link</element>
+            <position>13</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>29f58caa2f1ae410c809bea62799b626</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>plan</element>
+            <position>14</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-15 18:32:54</sys_created_on>
+            <sys_id>a9f58caa2f1ae410c809bea62799b626</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-15 18:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_84446_advertrack_flat</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-11 14:30:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d28e6cd2fd66010c809bea62799b6d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_84446_advertrack_flat</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+            <sys_update_name>sys_ui_section_8d28e6cd2fd66010c809bea62799b6d9</sys_update_name>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-11 14:30:35</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Developer" name="Developer">3828e6cd2fd66010c809bea62799b6d5</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

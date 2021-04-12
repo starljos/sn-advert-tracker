@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2021-02-13 15:30:23</sys_created_on>
+        <sys_id>e0098dfd2f962410c809bea62799b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_84446_advertrack_estate.x_84446_advertrack.estate_user</sys_name>
+        <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+        <sys_security_acl display_value="x_84446_advertrack_estate">a8098dfd2f962410c809bea62799b6e6</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e0098dfd2f962410c809bea62799b6eb</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2021-02-13 15:30:23</sys_updated_on>
+        <sys_user_role display_value="x_84446_advertrack.estate_user" name="x_84446_advertrack.estate_user">cc094dbd2f962410c809bea62799b6d9</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

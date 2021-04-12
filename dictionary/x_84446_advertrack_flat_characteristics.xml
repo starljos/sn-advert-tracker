@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Flat Characteristics" max_length="40" name="x_84446_advertrack_flat_characteristics" sizeclass="3" type="collection">
+        <element label="Is Advantage" max_length="40" name="is_advantage" type="boolean"/>
+        <element display="true" label="Title" max_length="40" name="title" type="string"/>
+        <element label="Weight" max_length="40" name="weight" type="integer"/>
+    </element>
+</database>

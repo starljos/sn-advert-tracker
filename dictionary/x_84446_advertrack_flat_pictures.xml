@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Flat Pictures" max_length="40" name="x_84446_advertrack_flat_pictures" type="collection">
+    <element label="Flat Pictures" max_length="40" name="x_84446_advertrack_flat_pictures" sizeclass="2423" type="collection">
         <element label="Flat" max_length="32" name="flat" reference="x_84446_advertrack_flat" type="reference"/>
         <element label="Link" max_length="1024" name="link" type="url"/>
         <element label="Recognized" max_length="1000" name="recognized" type="string"/>

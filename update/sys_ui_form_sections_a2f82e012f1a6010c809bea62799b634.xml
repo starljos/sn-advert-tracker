@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="a2f82e012f1a6010c809bea62799b634" sys_domain="global" table="x_84446_advertrack_flat" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-11 14:34:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>baf82e012f1a6010c809bea62799b637</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_84446_advertrack_flat" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">a2f82e012f1a6010c809bea62799b634</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_84446_advertrack_flat" sys_domain="global" view="3828e6cd2fd66010c809bea62799b6d5">8d28e6cd2fd66010c809bea62799b6d9</sys_ui_section>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-11 14:34:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_84446_advertrack_flat</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-11 14:34:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2f82e012f1a6010c809bea62799b634</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_84446_advertrack_flat</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+            <sys_update_name>sys_ui_form_sections_a2f82e012f1a6010c809bea62799b634</sys_update_name>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-11 14:34:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Developer" name="Developer">3828e6cd2fd66010c809bea62799b6d5</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

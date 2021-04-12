@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Developer" max_length="40" name="x_84446_advertrack_developer" sizeclass="3" type="collection">
+        <element label="Advantages" max_length="32" name="advantages" reference="x_84446_advertrack_flat_characteristics" reference_qual="is_advantage=true^EQ" reference_qual_condition="is_advantage=true^EQ" type="reference"/>
+        <element label="Disadvantages" max_length="32" name="disadvantages" reference="x_84446_advertrack_flat_characteristics" reference_qual="is_advantage=false^EQ" reference_qual_condition="is_advantage=false^EQ" type="reference"/>
+        <element label="General" max_length="8000" name="general" type="string"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="Parking" max_length="8000" name="parking" type="string"/>
+        <index name="index">
+            <element name="advantages"/>
+        </index>
+        <index name="index2">
+            <element name="disadvantages"/>
+        </index>
+    </element>
+</database>

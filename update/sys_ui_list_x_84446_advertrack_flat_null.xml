@@ -2,48 +2,78 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_84446_advertrack_flat" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>parking</element>
-            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e4de6125dbf7001006fc7b603996194c</list_id>
+            <element>estate</element>
+            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2e1a85712fd62410c809bea62799b652</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>marek.polasik</sys_created_by>
-            <sys_created_on>2020-03-26 20:48:59</sys_created_on>
-            <sys_id>24de6125dbf7001006fc7b603996194e</sys_id>
+            <sys_created_on>2021-02-13 15:35:10</sys_created_on>
+            <sys_id>e61a85712fd62410c809bea62799b653</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-03-26 20:48:59</sys_updated_on>
+            <sys_updated_on>2021-02-13 15:35:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>price</element>
-            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e4de6125dbf7001006fc7b603996194c</list_id>
+            <element>room_no</element>
+            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2e1a85712fd62410c809bea62799b652</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>marek.polasik</sys_created_by>
-            <sys_created_on>2020-03-26 20:48:59</sys_created_on>
-            <sys_id>20de6125dbf7001006fc7b603996194f</sys_id>
+            <sys_created_on>2021-02-13 15:35:10</sys_created_on>
+            <sys_id>6a1a85712fd62410c809bea62799b653</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-03-26 20:48:59</sys_updated_on>
+            <sys_updated_on>2021-02-13 15:35:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>shower</element>
-            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e4de6125dbf7001006fc7b603996194c</list_id>
+            <element>size</element>
+            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2e1a85712fd62410c809bea62799b652</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>marek.polasik</sys_created_by>
-            <sys_created_on>2020-03-26 20:48:59</sys_created_on>
-            <sys_id>a0de6125dbf7001006fc7b603996194f</sys_id>
+            <sys_created_on>2021-02-13 15:35:10</sys_created_on>
+            <sys_id>ea1a85712fd62410c809bea62799b653</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-03-26 20:48:59</sys_updated_on>
+            <sys_updated_on>2021-02-13 15:35:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>price_square</element>
+            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2e1a85712fd62410c809bea62799b652</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-13 15:35:10</sys_created_on>
+            <sys_id>6e1a85712fd62410c809bea62799b653</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-13 15:35:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>price</element>
+            <list_id display_value="x_84446_advertrack_flat" element="NULL" name="x_84446_advertrack_flat" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2e1a85712fd62410c809bea62799b652</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2021-02-13 15:35:10</sys_created_on>
+            <sys_id>ee1a85712fd62410c809bea62799b653</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2021-02-13 15:35:10</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -57,18 +87,18 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>marek.polasik</sys_created_by>
-            <sys_created_on>2020-03-26 20:48:59</sys_created_on>
+            <sys_created_on>2021-02-13 15:35:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e4de6125dbf7001006fc7b603996194c</sys_id>
+            <sys_id>2e1a85712fd62410c809bea62799b652</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_84446_advertrack_flat</sys_name>
-            <sys_package display_value="Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
+            <sys_package display_value="Kuna Advert Tracker" source="x_84446_advertrack">e5604498dbdf401006fc7b60399619e6</sys_package>
             <sys_policy/>
-            <sys_scope display_value="Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
+            <sys_scope display_value="Kuna Advert Tracker">e5604498dbdf401006fc7b60399619e6</sys_scope>
             <sys_update_name>sys_ui_list_x_84446_advertrack_flat_null</sys_update_name>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-03-26 20:48:59</sys_updated_on>
+            <sys_updated_on>2021-02-13 15:35:10</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
